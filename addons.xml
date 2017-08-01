@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<addons><addon id="service.pixel.lembretes" name="[COLOR FFFF6B00]Lembretes Pixel[/COLOR]" provider-name="Birger Jesch" version="2.0.4">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0" />
+        <import addon="script.module.dateutil" version="2.5.3" />
+        <import addon="xbmc.json" version="6.20.0" />
+    </requires>
+    <extension library="service.py" point="xbmc.service" start="login" />
+    <extension library="handler.py" point="xbmc.python.script" />
+    <extension library="addtimer.py" point="kodi.context.item">
+            <menu id="kodi.core.main">
+                <item library="addtimer.py">
+                    <label>30040</label>
+                    <visible>System.HasAddon(service.pixel.lembretes) + Window.IsVisible(tvguide)</visible>
+                </item>
+                <item library="deltimer.py">
+                    <label>30041</label>
+                    <visible>System.HasAddon(service.pixel.lembretes) + Window.IsVisible(tvguide)</visible>
+                </item>
+            </menu>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="pt_BR">Lembretes para o modulo de PVR do Kodi</summary>
+        <summary lang="en">A switch timer for the PVR module of Kodi</summary>
+        <summary lang="de">Ein Umschalttimer für das PVR-Modul von Kodi</summary>
+        <description lang="en">Switching with the KN switchtimer from every point of view inside Kodi to a tv or radio broadcast at a given time - no more miss your favorite shows or sports events on tv.</description>
+        <description lang="de">Mit dem KN Switchtimer schaltest Du auf Deine programmierte Sendung zur richtigen Zeit um - egal wo Du Dich gerade befindest. Nie wieder die Lieblingssendung oder wichtige Sportereignisse verpassen.</description>
+        <description lang="pt_BR">Permite agendar um programa de tv e o Kodi muda de canal automaticamente na hora agendada.</description>
+        <disclaimer lang="en">Use at your own risk.</disclaimer>
+        <disclaimer lang="de">Benutzung auf eigene Gefahr</disclaimer>
+        <disclaimer lang="pt_BR" />
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <website />
+        <source>https://github.com/josemoraes99/pixel.lembretes</source>
+        <email />
+        <language />
+    </extension>
+</addon><addon id="service.pixel.brkeyboard" name="[COLOR FFFF6B00]Teclado BR[/COLOR]" provider-name="josemoraes" version="1.0.0">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0" />
+    </requires>
+    <extension library="addon.py" point="xbmc.service" start="[login|startup]">
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <language>en</language>
+        <platform>all</platform>
+        <summary>Push Strings</summary>
+        <description>On Screen Keyboard em português brasileiro com acentos. Após instalado dois novos teclados estarão disponíveis, Portuguese (Brazil) QUERTY e Special QUERTY. Para selecionar esses teclados: SISTEMA -&gt; Aparência -&gt; Internacional -&gt; Layouts do Teclado. Desmarcar o teclado English e selecionar os dois novos. (lembrando que o nível de ajuste deve estar pelo menos em Padrão)</description>
+        <license>GNU General Public License, v2</license>
+    </extension>
+</addon></addons>
