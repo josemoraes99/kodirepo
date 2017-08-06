@@ -36,7 +36,7 @@
         <email />
         <language />
     </extension>
-</addon><addon id="service.pixel.brkeyboard" name="[COLOR FFFF6B00]Teclado BR[/COLOR]" provider-name="josemoraes" version="1.0.0">
+</addon><addon id="service.pixel.brkeyboard" name="[COLOR FFFF6B00]Teclado BR[/COLOR]" provider-name="josemoraes" version="1.0.1">
     <requires>
         <import addon="xbmc.python" version="2.24.0" />
     </requires>
