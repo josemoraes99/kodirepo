@@ -49,7 +49,7 @@
         <description>On Screen Keyboard em português brasileiro com acentos. Após instalado dois novos teclados estarão disponíveis, Portuguese (Brazil) QUERTY e Special QUERTY. Para selecionar esses teclados: SISTEMA -&gt; Aparência -&gt; Internacional -&gt; Layouts do Teclado. Desmarcar o teclado English e selecionar os dois novos. (lembrando que o nível de ajuste deve estar pelo menos em Padrão)</description>
         <license>GNU General Public License, v2</license>
     </extension>
-</addon><addon id="plugin.video.pixel.canais" name="[COLOR FFFF6B00]Canais Pixel[/COLOR]" provider-name="josemoraes" version="1.1.0">
+</addon><addon id="plugin.video.pixel.canais" name="[COLOR FFFF6B00]Canais Pixel[/COLOR]" provider-name="josemoraes" version="1.1.1">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
   </requires>
@@ -63,7 +63,7 @@
       <source>https://github.com/josemoraes99/plugin.video.pixel.canais</source>
       <platform>all</platform>
       <news>
-1.1.0
+1.1.1
 - mudança de host das imagens
 - lista remota de canais internos 
 - ocultar canais sd
